@@ -17,9 +17,7 @@ There are 5 services total:
 4. Dashboarder
 4. Storage
 
-**Kafka and Zookeeper** are help services to manage broker configuration. Kafka was used as a message queue (an alternative is RabbitMQ e.g.), because after fetching data from Binance API we need to visualize and store it. To keep this logic separated and because fetching data is a continuous process we need to implement some streaming logic. 
-
-The main goal of the project was to fetch data from Binance API and then visualize and store it. Because fetching data is continuous a process we need to implement some streaming logic. Kafka was used as a message queue (alternative is RabbitMQ e.g.) hence Kafka and Zookeeper are help services to manage broker configuration.
+The main goal of the project was to fetch data from Binance API and then visualize and store it. Because fetching data is continuous a process we need to implement some streaming logic. Kafka was used as a message queue (alternative is RabbitMQ e.g.) hence **Kafka and Zookeeper** are help services to manage broker configuration.
 
 **Fetcher** is a service responsible for fetching data and producing it to Kafka topic.
 
