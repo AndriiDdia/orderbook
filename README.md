@@ -38,6 +38,9 @@ To **run** a project run this command
 make run-project
 ```
 When the project is running you can visit `http://127.0.0.1:8050/` to check real time orderbook dashboard visualizations.
+This is how dashboard should look like.
+![dashboard](images/dashboard.png)
+
 To check data inside PSQL database use PgAdmin or any other similar program.
 Credentials can be found inside `docker-compose.yml` file in storage service under environment configuration.
 
