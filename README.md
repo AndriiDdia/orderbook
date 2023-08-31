@@ -28,6 +28,7 @@ The main goal of the project was to fetch data from Binance API and then visuali
 **Storage** is a service to save data. Data is consumed from a topic, transformed to a unified view, and then stored in PSQL database hosted on AWS RDS instance was picked 
 
 ## Commands overview
+To manipulate with a project you need to clone it.
 ### Build project
 To **build** a project run this command
 ```
@@ -39,6 +40,9 @@ To **run** a project run this command
 make run-project
 ```
 When the project is running you can visit `http://127.0.0.1:8050/` to check real time orderbook dashboard visualizations.
+To check data inside PSQL database use PgAdmin or any other similar program.
+Credentials can be found inside `docker-compose.yml` file in storage service under environment configuration.
+
 ### Stop project
 To **stop** a project run this command
 ```
